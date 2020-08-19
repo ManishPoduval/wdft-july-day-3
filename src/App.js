@@ -45,7 +45,7 @@ class App extends React.Component {
   handleSearch = (e) => {
     let searchName = e.currentTarget.value
     let cloneItems = this.state.items.filter((item) => {
-      return item.name.startsWith(searchName)
+      return item.title.startsWith(searchName)
     })
 
     this.setState({
@@ -71,7 +71,6 @@ class App extends React.Component {
   componentDidUpdate(){
     console.log('Component has updated !!! ')
   }
-
 
   render(){
     return (
